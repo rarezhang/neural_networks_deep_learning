@@ -1,6 +1,6 @@
 # word vectors  
 
-[notes of this](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/) 
+[Reading notes of this article](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)  
 
 - [google implementaion](https://code.google.com/archive/p/word2vec/)  
 - vector representation of words  
