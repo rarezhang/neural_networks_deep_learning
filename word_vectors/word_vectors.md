@@ -42,8 +42,18 @@
 
 ### [Distributed Representations of Words and Phrases and their Compositionality – Mikolov et al. 2013](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 - optimisations for the skip-gram model  
+    + why: update every output word vector for every word in a training instance is very expensive  
     + hierarchical softmax  
+        ![hierarchical-softmax](https://cloud.githubusercontent.com/assets/5633774/23104993/61db2c9a-f695-11e6-9e4a-3657f7903b1c.png)
+        * uses a binary tree (binary Huffman tree) to represent all words in the vocabulary  
+        * words: leaves in the tree  
+        * path: a unique path from the root to the leaf --> to estimate the probability ( probability of a random walk starting from the root ending at the leaf in question) of the word represented by the leaf
     + negative sampling  
+        * only update a sample of output words per iteration  
+        * the target output word should be kept in the sample and gets updated, and add to this a few (non-target) words as __negative samples__  
+        * a probabilistic distribution is needed for the sampling process, and it can be arbitrarily chosen. can determine a good distribution empirically  
+        * subsampling: counter the imbalance between rare and frequent words in the training set, each word in the training set is discarded with probability P(wi) where  
+        ![subsampling](https://cloud.githubusercontent.com/assets/5633774/23105109/b74d201a-f696-11e6-91c3-586da232162d.png)  
 
 ### [Linguistic Regularities in Continuous Space Word Representations – Mikolov et al. 2013](http://msr-waypoint.com/en-us/um/people/gzweig/Pubs/NAACL2013Regularities.pdf)
 - vector-oriented reasoning based on word vectors (King - Man + Woman = Queen)  
