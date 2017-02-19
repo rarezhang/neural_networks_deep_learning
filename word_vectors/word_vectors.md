@@ -24,9 +24,19 @@
     ![cbow-hidden](https://cloud.githubusercontent.com/assets/5633774/23104807/eebed7d2-f691-11e6-896d-1b71f691a33a.png)  
         * activation function: sum the corresponding __hot__ rows in W1 and dividing by C to take the average  (C: # of input word vectors; W1: weight matrix)  
     + output layer  
-    + training objective: maximize the conditional probability of observing the __focus word__ given the input context words
+        * a selection of a row from W1 based on the input  
+        * from the hidden layer to the output layer, the second weight matrix W2 can be used to compute a score for each word in the vocabulary, and softmax can be used to obtain the posterior distribution of words  
+    + training objective: maximize the conditional probability of observing the __focus word__ given the input context words  
 
-- Continuous Skip-gram model (skip-gram) 
+- Continuous Skip-gram model (skip-gram)  
+    + input: the focus word as the single input vector
+    + hidden layer: 
+        * activation function: amounts to copying the corresponding row from the weights matrix W1 (linear)  
+    + output layer: 
+        * target context words   
+        * C multinomial distributions  
+    + training objective: mimimize the summed prediction error across all context words in the output layer      
+        
 
 
 
