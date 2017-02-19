@@ -1,4 +1,7 @@
 # word vectors  
+
+[notes of this](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/) 
+
 - [google implementaion](https://code.google.com/archive/p/word2vec/)  
 - vector representation of words  
 - vectors can represent words in an abstract way  
@@ -28,7 +31,8 @@
         * from the hidden layer to the output layer, the second weight matrix W2 can be used to compute a score for each word in the vocabulary, and softmax can be used to obtain the posterior distribution of words  
     + training objective: maximize the conditional probability of observing the __focus word__ given the input context words  
 
-- Continuous Skip-gram model (skip-gram)  
+- Continuous Skip-gram model (skip-gram)
+    ![skip-gram](https://cloud.githubusercontent.com/assets/5633774/23105154/8a872156-f697-11e6-90fa-ff1a3e13d039.png)    
     + input: the focus word as the single input vector
     + hidden layer: 
         * activation function: amounts to copying the corresponding row from the weights matrix W1 (linear)  
@@ -52,7 +56,7 @@
         * only update a sample of output words per iteration  
         * the target output word should be kept in the sample and gets updated, and add to this a few (non-target) words as __negative samples__  
         * a probabilistic distribution is needed for the sampling process, and it can be arbitrarily chosen. can determine a good distribution empirically  
-        * subsampling: counter the imbalance between rare and frequent words in the training set, each word in the training set is discarded with probability P(wi) where  
+        * subsampling: counter the imbalance between rare and frequent words in the training set, each word in the training set is discarded with probability P(wi) (f(wi): the frequency of word wi, t: a chosen threshold, typically around 10**-5.)   
         ![subsampling](https://cloud.githubusercontent.com/assets/5633774/23105109/b74d201a-f696-11e6-91c3-586da232162d.png)  
 
 ### [Linguistic Regularities in Continuous Space Word Representations – Mikolov et al. 2013](http://msr-waypoint.com/en-us/um/people/gzweig/Pubs/NAACL2013Regularities.pdf)
