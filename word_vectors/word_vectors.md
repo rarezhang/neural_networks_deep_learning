@@ -1,6 +1,9 @@
 # word vectors  
 
+
 [Reading notes of this article](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)  
+
+[todo: read more](https://www.tensorflow.org/tutorials/word2vec)
 
 - [google implementaion](https://code.google.com/archive/p/word2vec/)  
 - vector representation of words  
