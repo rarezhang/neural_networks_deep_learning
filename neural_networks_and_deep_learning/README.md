@@ -56,7 +56,7 @@
 - to solve minimization problems  
 - goal: find a set of weights and biases which make the cost as small as possible  
     + minimize the quadratic cost  
-    + examine the classificatio accuracy  
+    + examine the classification accuracy  
 - cost function: e.g., quadratic cost function (MSE)  
 ![cost_function_MSE](https://cloud.githubusercontent.com/assets/5633774/23446057/4c070b36-fdfd-11e6-9fd5-1abb980ad900.png)  
     + why need cost function: making small changes to the weights and biases won't cause any change in the number of training records classified correctly --> difficult to decide how to change the weights  
@@ -72,6 +72,13 @@
     ![direction](https://cloud.githubusercontent.com/assets/5633774/23446565/d8519864-fe01-11e6-9525-ef4f67e18666.png)  
     + re-write the change of cost(guarantee the change is negative):  
     ![re-cost](https://cloud.githubusercontent.com/assets/5633774/23446589/0b8b6e3a-fe02-11e6-834d-508369477abc.png)  
+    + keep decreasing cost C until reach a global minimum  
+    ![move](https://cloud.githubusercontent.com/assets/5633774/23446860/f3363d54-fe03-11e6-9b1d-85b6f0d13306.png)
+    ![direction](https://cloud.githubusercontent.com/assets/5633774/23446565/d8519864-fe01-11e6-9525-ef4f67e18666.png)
+    ![v](https://cloud.githubusercontent.com/assets/5633774/23446887/2d50d36e-fe04-11e6-848e-10674e6b9099.png)  
+    
+    
+    
     
     
     
