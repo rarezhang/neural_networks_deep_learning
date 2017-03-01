@@ -49,8 +49,7 @@
     + with loops: recurrent neural networks  
 
     
-### simple network  
-![simple_network](https://cloud.githubusercontent.com/assets/5633774/23445679/69e65dda-fdfa-11e6-9c86-d4e437970f1c.png)
+
 
 ### gradient descent  
 - to solve minimization problems  
@@ -72,13 +71,23 @@
     ![direction](https://cloud.githubusercontent.com/assets/5633774/23446565/d8519864-fe01-11e6-9525-ef4f67e18666.png)  
     + re-write the change of cost(guarantee the change is negative):  
     ![re-cost](https://cloud.githubusercontent.com/assets/5633774/23446589/0b8b6e3a-fe02-11e6-834d-508369477abc.png)  
-    + keep decreasing cost C until reach a global minimum  
+    + update rule: keep decreasing cost C until reach a global minimum  
     ![move](https://cloud.githubusercontent.com/assets/5633774/23446860/f3363d54-fe03-11e6-9b1d-85b6f0d13306.png)
     ![direction](https://cloud.githubusercontent.com/assets/5633774/23446565/d8519864-fe01-11e6-9525-ef4f67e18666.png)
     ![v](https://cloud.githubusercontent.com/assets/5633774/23446887/2d50d36e-fe04-11e6-848e-10674e6b9099.png)  
+    + re-write update rule (gradient vector has corresponding components w and b):  
+    ![update_rule](https://cloud.githubusercontent.com/assets/5633774/23447093/c4b426ce-fe05-11e6-9fdc-424ba87a2c03.png)  
+- stochastic gradient descent  
+    + goal: estimate the gradient by computing a small sample of randomly chosen training inputs  
+    + by averaging over the small sample (m), quickly get estimate of the true gradient  
+    ![stochastic gradient descent ](https://cloud.githubusercontent.com/assets/5633774/23447243/ccd981cc-fe06-11e6-96e4-71432ea91c5a.png)  ![image](https://cloud.githubusercontent.com/assets/5633774/23447251/db0524a4-fe06-11e6-9260-a83f68ad9f00.png)  
+    + stochastic gradient descent works by picking out a randomly chosen mini-batch of training inputs:  
+    ![stochastic gradient descent update rule](https://cloud.githubusercontent.com/assets/5633774/23447280/1d25093a-fe07-11e6-9918-7bce555ccd53.png)  
     
     
-    
+### simple network  
+![simple_network](https://cloud.githubusercontent.com/assets/5633774/23445679/69e65dda-fdfa-11e6-9c86-d4e437970f1c.png)    
+[code](https://github.com/rarezhang/neural_networks_deep_learning/blob/master/neural_networks_and_deep_learning/network.py)
     
     
     
