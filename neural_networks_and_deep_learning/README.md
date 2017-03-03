@@ -85,9 +85,9 @@
     ![stochastic gradient descent update rule](https://cloud.githubusercontent.com/assets/5633774/23447280/1d25093a-fe07-11e6-9918-7bce555ccd53.png)  
     
     
-### simple network  
+### simple network [code](https://github.com/rarezhang/neural_networks_deep_learning/blob/master/neural_networks_and_deep_learning/Network.py) 
 ![simple_network](https://cloud.githubusercontent.com/assets/5633774/23445679/69e65dda-fdfa-11e6-9c86-d4e437970f1c.png)    
-[code](https://github.com/rarezhang/neural_networks_deep_learning/blob/master/neural_networks_and_deep_learning/network.py)
+
     
     
     
