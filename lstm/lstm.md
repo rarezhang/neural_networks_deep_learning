@@ -8,4 +8,4 @@ https://github.com/nicodjimenez/lstm
 
 
 
-[blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+[blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)  
