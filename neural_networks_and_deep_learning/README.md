@@ -101,7 +101,18 @@
 
  
 ### back-propagation algorithm  
-- back-propagation gives us detailed insights into how changing the weights and biases changes the overall behavior of the network 
+- back-propagation gives us detailed insights into how changing the weights and biases changes the overall behavior of the network  
+- goal of back-propagation: compute the partial derivatives ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png) of the cost function with respect to any weight or bias in the network  
+    + compute the partial derivatives ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png) for a single training example  
+    + recover ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png) by averaging over training examples  
+    + cost function can be written as as function of the outputs from the neural network (a function of the output activations)  
+- intermediate error: the error of neuron **_j_** in layer **_l_**:  
+    + back-propagation give a way of computing the intermediate error for every layer; then relating those errors to the quantities of real interest: ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png)  
+    + ![intermediate error](https://cloud.githubusercontent.com/assets/5633774/24054569/f297c57c-0af9-11e7-840e-bf1e1d684636.png)  
+    + ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)
+    
+    
+    
 
     
     
