@@ -130,13 +130,16 @@
     3. **[BP3]** the rate of change of the cost with respect to any bias in the network  
         ![bp3](https://cloud.githubusercontent.com/assets/5633774/24056538/5f3c9cc8-0b01-11e7-902f-31ceffa8bd4d.png)  
         Proof:  
-        + (1) ![proof bp3(1)](https://cloud.githubusercontent.com/assets/5633774/24056761/232462e2-0b02-11e7-9974-c73802f16013.png)  
-        + (2) ![proof bp3(2)](https://cloud.githubusercontent.com/assets/5633774/24056783/3b1f73be-0b02-11e7-92db-2e4a51431874.png)  
-        + according to (1): ![proof bp3(3)](https://cloud.githubusercontent.com/assets/5633774/24056892/949e3d1c-0b02-11e7-9190-a8241fbb0adf.png)  
-        + according to (2): ![proof bp3(4)](https://cloud.githubusercontent.com/assets/5633774/24056982/ec19ee7e-0b02-11e7-97ba-05401546424f.png) --> the definition of intermediate error  
+        + (1)  ![proof bp3(1)](https://cloud.githubusercontent.com/assets/5633774/24056761/232462e2-0b02-11e7-9974-c73802f16013.png)  
+        + (2)  ![proof bp3(2)](https://cloud.githubusercontent.com/assets/5633774/24056783/3b1f73be-0b02-11e7-92db-2e4a51431874.png)  
+        + according to (1):  ![proof bp3(3)](https://cloud.githubusercontent.com/assets/5633774/24056892/949e3d1c-0b02-11e7-9190-a8241fbb0adf.png)  
+        + according to (2):  ![proof bp3(4)](https://cloud.githubusercontent.com/assets/5633774/24056982/ec19ee7e-0b02-11e7-97ba-05401546424f.png) --> the definition of intermediate error  
     4. **[BP4]** the rate of change of the cost with respect to any weight in the network         
         ![bp4](https://cloud.githubusercontent.com/assets/5633774/24056550/671e0fb2-0b01-11e7-90f2-766f1d557c79.png)  
-    
+        Proof:
+        + (3)  ![proof bp4(1)](https://cloud.githubusercontent.com/assets/5633774/24057193/c378f3d8-0b03-11e7-821d-a67eca1de945.png)  
+        + according to (1):  ![proof bp4(2)](https://cloud.githubusercontent.com/assets/5633774/24057278/12b27c80-0b04-11e7-9fd4-d647a824a607.png)  
+        + according to (3):  ![proof bp4(3)](https://cloud.githubusercontent.com/assets/5633774/24057401/7be425fa-0b04-11e7-9dc9-8cf42ea7c2a1.png)   
     
 
     
