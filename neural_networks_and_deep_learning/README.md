@@ -103,13 +103,28 @@
 ### back-propagation algorithm  
 - back-propagation gives us detailed insights into how changing the weights and biases changes the overall behavior of the network  
 - goal of back-propagation: compute the partial derivatives ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png) of the cost function with respect to any weight or bias in the network  
-    + compute the partial derivatives ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png) for a single training example  
-    + recover ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png) by averaging over training examples  
+    + partial derivatives:  
+    ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png)  
+    + compute the partial derivatives for a single training example  
+    + recover the partial derivatives by averaging over training examples  
     + cost function can be written as as function of the outputs from the neural network (a function of the output activations)  
 - intermediate error: the error of neuron **_j_** in layer **_l_**:  
-    + back-propagation give a way of computing the intermediate error for every layer; then relating those errors to the quantities of real interest: ![partial derivatives](https://cloud.githubusercontent.com/assets/5633774/24053059/e0fb0928-0af4-11e7-98f8-05bb386e9da0.png)  
-    + ![intermediate error](https://cloud.githubusercontent.com/assets/5633774/24054569/f297c57c-0af9-11e7-840e-bf1e1d684636.png)  
-    + ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)
+    ![intermediate error](https://cloud.githubusercontent.com/assets/5633774/24054569/f297c57c-0af9-11e7-840e-bf1e1d684636.png)  
+    ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)
+    + back-propagation give a way of computing the intermediate error for every layer; then relating those errors to the quantities of real interest: partial derivatives  
+- four fundamental equations behind back-propagation: 
+    0. by computing 1 and 2: can compute the intermediate error for any layer in the network  
+    1. error in the output layer:  
+        ![bp1](https://cloud.githubusercontent.com/assets/5633774/24055583/bf25f7b4-0afd-11e7-9720-4e578c00257d.png)  
+        + first term: how fast the cost is changing as a function of the j-th output activation  
+        ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)  
+        ![sigma](https://cloud.githubusercontent.com/assets/5633774/23445040/e257fe04-fdf5-11e6-9a05-91d96e2f39ba.png)   
+        + second term: how fast the activation function is changing   
+        ![cost](https://cloud.githubusercontent.com/assets/5633774/24055634/fdfb16fe-0afd-11e7-8aae-146f3803e880.png)  
+        ![cost derivatives](https://cloud.githubusercontent.com/assets/5633774/24055642/05c9cac4-0afe-11e7-9d34-43bdb69c6080.png)  
+    2. error in the next layer  
+        ![bp2](https://cloud.githubusercontent.com/assets/5633774/24055745/87f5b580-0afe-11e7-88dc-6cf6857d238d.png)  
+        + moving the error backward through the network  
     
     
     
