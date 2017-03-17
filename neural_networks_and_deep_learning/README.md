@@ -113,19 +113,29 @@
     ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)
     + back-propagation give a way of computing the intermediate error for every layer; then relating those errors to the quantities of real interest: partial derivatives  
 - four fundamental equations behind back-propagation:  
-    0. by computing 1 and 2: can compute the intermediate error for any layer in the network  
-    1. error in the output layer:  
+    + by computing **[BP1]** and **[BP2]** : can compute the intermediate error for any layer in the network  
+    + compute partial derivatives based on the intermediate error: **[BP3]** and **[BP4]**  
+    
+    1. **[BP1]** error in the output layer:  
         ![bp1](https://cloud.githubusercontent.com/assets/5633774/24055583/bf25f7b4-0afd-11e7-9720-4e578c00257d.png)  
         + first term: how fast the cost is changing as a function of the j-th output activation  
-        ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)  
-        ![sigma](https://cloud.githubusercontent.com/assets/5633774/23445040/e257fe04-fdf5-11e6-9a05-91d96e2f39ba.png)   
-        + second term: how fast the activation function is changing   
         ![cost](https://cloud.githubusercontent.com/assets/5633774/24055634/fdfb16fe-0afd-11e7-8aae-146f3803e880.png)  
         ![cost derivatives](https://cloud.githubusercontent.com/assets/5633774/24055642/05c9cac4-0afe-11e7-9d34-43bdb69c6080.png)  
-    2. error in the next layer  
+        + second term: how fast the activation function is changing   
+        ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)  
+        ![sigma](https://cloud.githubusercontent.com/assets/5633774/23445040/e257fe04-fdf5-11e6-9a05-91d96e2f39ba.png)   
+    2. **[BP2]** error in the next layer  
         ![bp2](https://cloud.githubusercontent.com/assets/5633774/24055745/87f5b580-0afe-11e7-88dc-6cf6857d238d.png)  
         + moving the error backward through the network  
-    
+    3. **[BP3]** the rate of change of the cost with respect to any bias in the network  
+        ![bp3](https://cloud.githubusercontent.com/assets/5633774/24056538/5f3c9cc8-0b01-11e7-902f-31ceffa8bd4d.png)  
+        Proof:  
+        + (1) ![proof bp3(1)](https://cloud.githubusercontent.com/assets/5633774/24056761/232462e2-0b02-11e7-9974-c73802f16013.png)  
+        + (2) ![proof bp3(2)](https://cloud.githubusercontent.com/assets/5633774/24056783/3b1f73be-0b02-11e7-92db-2e4a51431874.png)  
+        + according to (1): ![proof bp3(3)](https://cloud.githubusercontent.com/assets/5633774/24056892/949e3d1c-0b02-11e7-9190-a8241fbb0adf.png)  
+        + according to (2): ![proof bp3(4)](https://cloud.githubusercontent.com/assets/5633774/24056982/ec19ee7e-0b02-11e7-97ba-05401546424f.png) --> the definition of intermediate error  
+    4. **[BP4]** the rate of change of the cost with respect to any weight in the network         
+        ![bp4](https://cloud.githubusercontent.com/assets/5633774/24056550/671e0fb2-0b01-11e7-90f2-766f1d557c79.png)  
     
     
 
