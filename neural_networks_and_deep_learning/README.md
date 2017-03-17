@@ -90,7 +90,16 @@
 
     
 ### matrix-based notation
-    
+![matrix-based notation: weights](https://cloud.githubusercontent.com/assets/5633774/24052436/b899a2de-0af2-11e7-981e-fa71b8794e55.png)
+![matrix-based notation: activation](https://cloud.githubusercontent.com/assets/5633774/24052472/dadf6ce8-0af2-11e7-9c1f-fd80479f1d23.png)  
+![activation1](https://cloud.githubusercontent.com/assets/5633774/24052517/f8ac57e0-0af2-11e7-876b-c97f58b398bb.png)  
+- to rewrite this in a matrix form:  
+    + define a weight matrix for each layer  
+    + define a bias vector for each layer  
+![activation 2](https://cloud.githubusercontent.com/assets/5633774/24052557/249f682e-0af3-11e7-8b43-c3a18ae0bb52.png)  
+
+
+ 
 ### back-propagation algorithm  
 - back-propagation gives us detailed insights into how changing the weights and biases changes the overall behavior of the network 
 
