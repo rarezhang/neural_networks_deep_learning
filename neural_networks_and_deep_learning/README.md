@@ -12,7 +12,7 @@
 
 
     
-### perceptrons  
+### perceptron  
 - take binary inputs and produces a single binary output (weight up evidence)  
 ![perceptron](https://cloud.githubusercontent.com/assets/5633774/23443637/6525c374-fded-11e6-9d5a-fbcf13695528.png)  
 - input: x1,x2,... 0 or 1  
@@ -23,28 +23,28 @@
 ![perceptron_decision_rule2](https://cloud.githubusercontent.com/assets/5633774/23444169/975eff4c-fdf0-11e6-9b79-a0ca3c3762d7.png)
 - if multiple layers perceptrons:
     + first layer: make simple decisions by weighing up the input evidence  
-    + xxth layer: making decision by weighing up the results from previous layers --> can make a decision at a more complex and abstract level      
+    + xx-th layer: making decision by weighing up the results from previous layers --> can make a decision at a more complex and abstract level      
     ![multilayer_perceptron](https://cloud.githubusercontent.com/assets/5633774/23444026/d0d7fa68-fdef-11e6-9876-b13e302ef278.png)  
-- percepron can be used to simulate NAND gates:  
-    + NAND gates are universal for computaion --> perceptrons are universal for computation   
+- perceptron can be used to simulate NAND gates:  
+    + NAND gates are universal for computation --> perceptrons are universal for computation   
     + learning algorithms: automatically tune weights and biases  
 
 
 
 
 ### sigmoid neuron  
-- goal: small change in any weigth causes a small change in the output (perceptrons: completely flip)  
+- goal: small change in any weight causes a small change in the output (perceptrons: completely flip)  
 - input:  x1,x2,... [0,1]  
 - output: sigmod(w*x+b), sigmod function: ![sigmod](https://cloud.githubusercontent.com/assets/5633774/23445040/e257fe04-fdf5-11e6-9a05-91d96e2f39ba.png)  
     + when z=w*x+b is large and positive --> sigmod(z)~1  
     + when z=w*x+b is large and negative --> sigmod(z)~0  
-    + shape: smoothed out version of a step function(perceptron: outputis 1 or 0)  
+    + shape: smoothed out version of a step function(perceptron: outputs 1 or 0)  
     ![sigmod_shape](https://cloud.githubusercontent.com/assets/5633774/23445127/67cff6cc-fdf6-11e6-895f-3f63c159ff70.png)  
     
     
 ### the architecture of neural networks 
 ![architecture](https://cloud.githubusercontent.com/assets/5633774/23445436/8e116544-fdf8-11e6-99d4-4753a7ce3f55.png)  
-- feedforward neural networks: the output from one layer is used as input to the next layer  
+- feed-forward neural networks: the output from one layer is used as input to the next layer  
     + no loops  
     + with loops: recurrent neural networks  
 
@@ -89,8 +89,11 @@
 ![simple_network](https://cloud.githubusercontent.com/assets/5633774/23445679/69e65dda-fdfa-11e6-9c86-d4e437970f1c.png)    
 
     
+### matrix-based notation
     
-    
+### back-propagation algorithm  
+- back-propagation gives us detailed insights into how changing the weights and biases changes the overall behavior of the network 
+
     
     
     
