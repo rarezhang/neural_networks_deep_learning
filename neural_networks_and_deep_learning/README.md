@@ -112,7 +112,7 @@
     ![intermediate error](https://cloud.githubusercontent.com/assets/5633774/24054569/f297c57c-0af9-11e7-840e-bf1e1d684636.png)  
     ![compute z](https://cloud.githubusercontent.com/assets/5633774/24054602/108b6782-0afa-11e7-8321-cfd594fe9690.png)
     + back-propagation give a way of computing the intermediate error for every layer; then relating those errors to the quantities of real interest: partial derivatives  
-- four fundamental equations behind back-propagation: 
+- four fundamental equations behind back-propagation:  
     0. by computing 1 and 2: can compute the intermediate error for any layer in the network  
     1. error in the output layer:  
         ![bp1](https://cloud.githubusercontent.com/assets/5633774/24055583/bf25f7b4-0afd-11e7-9720-4e578c00257d.png)  
