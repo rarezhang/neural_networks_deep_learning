@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # coding=utf-8
+"""
+https://github.com/pytorch/examples/tree/master/mnist
+"""
 
 
 import torch 
