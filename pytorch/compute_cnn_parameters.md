@@ -3,11 +3,11 @@
 
 kernel_size: the size of the filter that is run over the images   
 stride: controls the stride for the cross-correlation, how far the filter is moved after each computation  
-padding: pads the input volume with __2*padding__ around the border  
+padding: pads the input volume with _padding__ around the border  
 
 ----------------------------------------------------------------------  
 
-# In each Conv Layer the network tries to understand the basic patterns  
+## In each Conv Layer the network tries to understand the basic patterns  
 
 For example: 
 1. In the First layer, the network tries to learn patterns and edges.  
