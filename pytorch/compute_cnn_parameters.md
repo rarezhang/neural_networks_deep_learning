@@ -46,7 +46,7 @@ Output Layer: This layer is the fully connected layer, so “(n+1)m” parameter
 -----------------------------------------------------------------------  
 ## Example: compute new activation shape  
 
-![cnn_example](./pic/nlexNet-1.png)  
+![cnn_example](./pic/AlexNet-1.png)  
 
 original size: k  
 filter shape: n * n  
