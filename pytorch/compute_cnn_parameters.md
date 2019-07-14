@@ -1,19 +1,24 @@
 # How to calculate the number of parameters in the CNN  
 
 
+kernel_size: the size of the filter that is run over the images   
+stride: controls the stride for the cross-correlation, how far the filter is moved after each computation  
+padding: pads the input volume with __2*padding__ around the border  
 
-## In each Conv Layer the network tries to understand the basic patterns  
+----------------------------------------------------------------------  
+
+# In each Conv Layer the network tries to understand the basic patterns  
 
 For example: 
 1. In the First layer, the network tries to learn patterns and edges.  
 2. In the second layer, it tries to understand the shape/color and other stuff.  
 3. A final layer called Feature layer/Fully Connected Layer tries to classify the image  
 
------------------------------------------------------------------------
+-----------------------------------------------------------------------  
 
 ## Various layer in CNN network  
 
-![cnn_example](./cnn_parameters.png)  
+![cnn_example](./pic/cnn_parameters.png)  
 
 
 Input Layer: All the input layer does is read the image. So, there are no parameters learn in here.  
@@ -38,22 +43,22 @@ Fully-connected Layer: all inputs units have a separable weight to each output u
 Output Layer: This layer is the fully connected layer, so “(n+1)m” parameters, when “n” is the number of inputs and “m” is the number of outputs.  
 
 
------------------------------------------------------------------------
+-----------------------------------------------------------------------  
 ## Example: compute new activation shape  
 
-![cnn_example](./AlexNet-1.png)  
+![cnn_example](./pic/nlexNet-1.png)  
 
 original size: k  
 filter shape: n * n  
 stride: m  
 pad: l  
 
-new activation shape = x*x 
-(k + 2*pad - n)/m + 1=x
+new activation shape = x*x  
+(k + 2*pad - n)/m + 1=x  
 
 
 
------------------------------------------------------------------------
+-----------------------------------------------------------------------  
 
 ## Example: compute parameters 
 
@@ -61,5 +66,5 @@ new activation shape = x*x
 
 **fully connected layter = (current layer n x previous layer n) + 1**  
 
-![cnn_example](./cnn_parameters.png)  
+![cnn_example](./pic/cnn_parameters.png)  
 
